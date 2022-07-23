@@ -2,7 +2,7 @@
 
 # link-shorty
 
-This is a project inspired by VIDAMMR
+This is a project inspired by VIDAMMR: https://www.youtube.com/c/VidaMRR
 
 The main function of the project is make a url shorter for some links,
 handling the count of how many times did you use that shorter url.
