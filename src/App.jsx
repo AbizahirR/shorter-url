@@ -7,7 +7,7 @@ function App() {
   return ( 
       <Routes>
         <Route path="/*" element={<MainContainer />} />
-        <Route path="r/:shortedUrl" element={<Redirect />} />
+        <Route path="/r/:shortedUrl" element={<Redirect />} />
       </Routes>
   )
 }
