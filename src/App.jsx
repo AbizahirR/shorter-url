@@ -6,8 +6,8 @@ function App() {
   
   return ( 
       <Routes>
-        <Route path="/r/:shortedUrl" element={<Redirect />} />
-        <Route path="/*" element={<MainContainer />} />
+        <Route path="r/:shortedUrl" element={<Redirect />} />
+        <Route path="*" element={<MainContainer />} />
       </Routes>
   )
 }
