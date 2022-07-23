@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const ShortedURLS = ({ state }) => {
 
   return (
@@ -7,7 +9,7 @@ const ShortedURLS = ({ state }) => {
         state.urls.map(item => {
           return (
               <article className="bg-lime-50 p-2 text-gray-900" key={item.UUIID}>
-                  <h2><b>Shortcut:</b> <a className="hover:text-indigo-600 transition-all" href={`/r/${item.shortUrl}`}>link-shorty.netlify.app/r/{item.shortUrl}</a></h2>
+                  <h2><b>Shortcut:</b> <Link className="hover:text-indigo-600 transition-all" to={`/r/${item.shortUrl}`}>link-shorty.netlify.app/r/{item.shortUrl}</Link></h2>
                   <h3><b>Original URL:</b> {item.url}</h3>
                   <h4><b>Visited:</b> {item.visitCounter}</h4>
               </article>
