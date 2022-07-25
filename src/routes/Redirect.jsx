@@ -18,7 +18,7 @@ const Redirect = () => {
             dispatch({ type: "VIEW_URL", urls: thisUrl.shortUrl })
 
             const interval = setInterval(() => {
-                if (counter === 1) {
+                if (counter <= 1) {
                     clearInterval(interval)
                 }
                 setCounter(counter => counter - 1)
