@@ -30,7 +30,8 @@ const InputForm = ({ dispatch }) => {
         value={url}
         onInvalid={(e) => e.target.setCustomValidity("Please enter a valid URL with http or https format")}
         placeholder={"Type a valid URL..."} 
-        className="w-full outline-none rounded-lg px-2 py-1 border-slate-900 border-2" />
+        className="bg-slate-200 border border-slate-700 placeholder-gray-700 text-black text-md rounded-lg focus:ring-blue-900 focus:border-slate-900 block w-full p-2.5" />
+        {/* ark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 */}
     </form>
     )
 }

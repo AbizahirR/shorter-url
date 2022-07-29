@@ -18,16 +18,15 @@ const Redirect = () => {
             dispatch({ type: "VIEW_URL", urls: thisUrl.shortUrl })
 
             const interval = setInterval(() => {
-                if (counter <= 1) {
-                    clearInterval(interval)
-                }
-                setCounter(counter => counter - 1)
+                setCounter(prevcounter => prevcounter - 1)
             }, 1000)
 
             setTimeout(() => {               
                 window.location.href = thisUrl.url;
-            }, 3000);           
+            }, 2000);           
         }
+
+        return () => clearInterval(interval)
     },[])
 
   return (
