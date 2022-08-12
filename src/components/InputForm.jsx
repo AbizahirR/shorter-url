@@ -24,14 +24,21 @@ const InputForm = ({ dispatch }) => {
 
     return (
     <form onSubmit={handleSubmit}>
-        <input 
+        <label 
+        htmlFor="addUrl"
+        className="text-slate-300 text-sm select-none bg-zinc-800 p-1 rounded-md">
+            Add shorted URL
+        </label>
+
+        <input
+        name="addUrl"
         type={"url"}
         onChange={handleChange}
         value={url}
         onInvalid={(e) => e.target.setCustomValidity("Please enter a valid URL with http or https format")}
         placeholder={"Type a valid URL..."} 
-        className="bg-slate-200 border border-slate-700 placeholder-gray-700 text-black text-md rounded-lg focus:ring-blue-900 focus:border-slate-900 block w-full p-2.5" />
-        {/* ark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 */}
+        className="bg-[#17191b] placeholder-slate-500 text-white text-md w-full p-2.5 border-t-0 border-l-0 border-r-0 border-b-1 border-[#343434] focus:ring-0 focus:border-[#343434]"
+        />
     </form>
     )
 }

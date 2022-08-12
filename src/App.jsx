@@ -2,7 +2,7 @@ import MainContainer from "./routes/MainContainer"
 import Redirect from "./routes/Redirect"
 import { Routes, Route } from "react-router-dom"
 
-function App() {
+const App = () => {
   
   return ( 
       <Routes>
