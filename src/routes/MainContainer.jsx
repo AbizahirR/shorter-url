@@ -13,7 +13,6 @@ const MainContainer = () => {
 
     return (
         <section className="w-full max-w-lg border p-2 border-[#343434] bg-[#17191b] rounded-lg flex-col text-xl max-h-96">
-            {/* <h1 className="text-center text-3xl text-slate-200 font-bold">Shorter Url</h1> */}
             <InputForm dispatch={dispatch} />
             <ShortedURLS state={state} />
         </section>
