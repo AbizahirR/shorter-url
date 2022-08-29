@@ -10,8 +10,8 @@ const ShortedURLS = ({ state }) => {
         state.urls.map(item => {
           return (
               <article className=" text-slate-200 pb-2 pt-2 border-b-slate-200/80 border-b" key={item.UUIID}>
-                  <h3>{item.url}</h3>
-                  <h2><Link className="hover:text-zinc-500 transition-all" to={`/r/${item.shortUrl}`}>link-shorty.netlify.app/r/{item.shortUrl}</Link></h2>
+                  <h2>{item.url}</h2>
+                  <h3><Link className="hover:text-zinc-500 transition-all" to={`/r/${item.shortUrl}`}>link-shorty.netlify.app/r/{item.shortUrl}</Link></h3>
                   <h4><b>Visited:</b> {item.visitCounter}</h4>
               </article>
           )
